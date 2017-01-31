@@ -22,7 +22,7 @@ public class FromRomanToArabic {
 			nextChar = String.valueOf(romanNumber.charAt(i));
 			actual = getValor(nextChar);
 			verificaOrdenCorrecto(actual, previous);
-			res = assignaSigno(actual, previous);
+			res += assignaSigno(actual, previous);
 			previous = actual;
 		}
 		return res;
