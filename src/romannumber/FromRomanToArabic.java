@@ -45,7 +45,7 @@ public class FromRomanToArabic {
 	private Integer getValor(String nextChar) {
 		Integer val = this.romanValues.get(nextChar);
 		if (val == null) {
-			return 0;
+			throw new WrongRomanNumberException();
 		}
 		return val;
 	}
